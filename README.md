@@ -46,4 +46,16 @@ Concept:
 FM (Frequency Modulation) is a modulation technique where the frequency of a carrier signal is varied based on the amplitude of a modulating signal. Demodulation is the process of extracting the original modulating signal from the FM carrier signal.
 
 Program Details:
+1. Import the required Python modules: `matplotlib.pyplot` for plotting and `numpy` for numerical operations.
+2. Import the `fft` and `fftshift` functions from `scipy.fft` module for Fourier transform calculations.
+3. Define a function `values` that takes four parameters: `vc` (amplitude of the carrier signal), `m` (modulation index of the FM signal), `fc` (frequency of the carrier signal), and `fm` (frequency of the message signal).
+4. Set the sampling frequency (`fs`), the sample time interval (`dt`), and create an array of time indices (`t`) for the time-domain signal.
+5. Calculate the frequency interval (`df`) and create an array of frequency indices (`f`) for the frequency spectrum.
+6. Generate the Frequency Modulated (FM) signal `v_fm` using the provided formula: `vc * np.cos(2*np.pi*fc*t + m*np.sin(2*np.pi*fm*t))`.
+7. Plot the FM signal in the time domain using `plt.plot`.
+8. Calculate the Fast Fourier Transform (FFT) of the FM signal (`v_fm`) and shift the frequency components using `fftshift`.
+9. Plot the spectrum of the FM signal in the frequency domain using `plt.plot`.
+10. Create a zoomed-in view of the spectrum and annotate the bandwidth based on the modulation index and message frequency.
+11. Execute the function `values` with specific parameter values to generate and analyze the FM signal.
+
 
