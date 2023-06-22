@@ -38,3 +38,11 @@ Program Details:
 9. The plots are displayed.
 10. The `values` function is called with specific parameter values to generate the plots.
 
+
+
+C) EXP4: To simulate Frequency Modulation (FM) using Python
+
+Concept:
+
+Program Details:
+
