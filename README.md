@@ -66,6 +66,42 @@ Concept:
 PCM is a digital modulation technique that converts analog signals into digital form. It involves sampling, quantizing, encoding, and decoding the signal. It provides high fidelity and noise immunity for applications like telecommunications and audio recording.
 
 Program Details:
+1. Import the required Python modules: 
+   - `matplotlib.pyplot` for plotting graphs
+   - `numpy` for numerical computations
+   - `scipy.fft` for fast Fourier transform operations
+2. Define the function `values(vm, fm, bits)` that takes three parameters:
+   - `vm`: Amplitude of the message signal
+   - `fm`: Frequency of the message signal
+   - `bits`: Number of bits per sample
+3. Set the sampling frequency (`fs`), time step (`dt`), time indices (`t`), and frequency indices (`f`) for the signals.
+4. Plot the message signal in the time domain:
+   - Generate the message signal using `v_m = vm*np.sin(2*np.pi*fm*t)`
+   - Create a subplot and plot the message signal using `plt.plot(t, v_m)`
+5. Quantize the message signal:
+   - Shift the message signal by `vm` to make quantization easier (`v_m_shifted = v_m + vm`)
+   - Determine the number of levels (`L`) based on the number of bits per sample
+   - Calculate the step size (`stepSize`) for quantization
+   - Create a list of quantization levels (`qLevelList`)
+   - Iterate over the shifted message signal and assign the quantized values to `qSignal`
+6. Plot the quantized signal in the time domain:
+   - Create a subplot and plot the quantized signal and the original signal (`v_m_shifted`) using `plt.plot(t, qSignal)` and `plt.plot(t, v_m_shifted, linestyle='dotted', color='r')`
+7. Encode and decode the quantized values:
+   - Create an empty list (`enCodedList`) to store the encoded values
+   - Iterate over the quantized values and assign the corresponding code number to each value
+   - Convert the code numbers to binary and store them in `enCodedList`
+   - Create an empty list (`deCodedList`) to store the decoded values
+   - Iterate over the encoded values and convert them back to decimal, storing them in `deCodedList`
+8. Reconstruct the signal:
+   - Subtract `vm` from the quantized signal to reconstruct the signal (`v_m_reconstructed = qSignal - vm`)
+9. Plot the reconstructed signal in the time domain:
+   - Create a subplot and plot the reconstructed signal using `plt.plot(t, v_m_reconstructed)`
+10. Filter the reconstructed signal to recover the original signal:
+    - Define a filter that attenuates frequencies outside the range of the original signal
+    - Apply the filter to the spectrum of the reconstructed signal using fast Fourier transform operations
+    - Perform an inverse Fourier transform on the filtered spectrum to obtain the recovered signal
+    - Plot the recovered signal and the original signal in a subplot using `plt.plot(t, v_m_recovered)` and `plt.plot(t, v_m, color='r', linestyle='dotted')`
+
 
 
 
