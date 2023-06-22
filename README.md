@@ -126,6 +126,7 @@ Program Details:
 F) EXP11: To simulate Binary Frequency Shift Keying (FSK) using Python
 
 Concept:
+Binary Frequency Shift Keying (FSK) is a digital modulation technique that uses different frequencies to represent binary data. It enables the transmission and reception of binary information through frequency variations in the carrier signal.
 
 Program Details:
 1. Import the necessary Python modules: `matplotlib.pyplot`, `scipy.fft`, and `numpy`.
@@ -141,7 +142,11 @@ Program Details:
 
 
 
+G) EXP12: To simulate Binary Phase Shift Keying (PSK) using Python
 
+Concept:
+
+Program Details:
 
 
 
