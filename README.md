@@ -2,9 +2,10 @@
 
 Libraries used: Matplotlib, Numpy, Scipy
 
-1) EXP1: To simulate Amplitude Modulation(AM) & Demodulation using Python
+B) EXP1: To simulate Amplitude Modulation(AM) & Demodulation using Python
 
-Concept: Amplitude Modulation (AM) is a technique that encodes information by varying the amplitude of a high-frequency carrier signal based on a lower-frequency message signal. Demodulation is the process of extracting the original message signal from the modulated carrier signal.
+Concept: 
+Amplitude Modulation (AM) is a technique that encodes information by varying the amplitude of a high-frequency carrier signal based on a lower-frequency message signal. Demodulation is the process of extracting the original message signal from the modulated carrier signal.
 
 Program Details: 
 1. The program imports the necessary modules: `matplotlib.pyplot`, `numpy`, and `scipy.fft`.
@@ -18,3 +19,12 @@ Program Details:
 9. The inverse FFT is applied to the filtered spectrum to obtain the original two-tone signal in the time domain.
 10. The demodulated two-tone signal is plotted against time.
 11. The `values` function is called with specific parameter values to generate the plots.
+
+
+B) EXP3: To simulate Frequency Division Multiplexing (FDM) & Demultiplexing using Python
+
+Concept:
+FDM (Frequency Division Multiplexing) is a method to transmit multiple signals simultaneously by dividing the frequency spectrum into subbands. Demultiplexing is the process of separating the signals at the receiving end, allowing each signal to be retrieved from the shared transmission.
+
+Program Details:
+
