@@ -63,6 +63,7 @@ Program Details:
 D) EXP8: To simulate Pulse Code Modulation (PCM) using Python
 
 Concept:
+PCM is a digital modulation technique that converts analog signals into digital form. It involves sampling, quantizing, encoding, and decoding the signal. It provides high fidelity and noise immunity for applications like telecommunications and audio recording.
 
 Program Details:
 
