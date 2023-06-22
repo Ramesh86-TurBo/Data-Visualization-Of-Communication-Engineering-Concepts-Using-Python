@@ -104,7 +104,7 @@ Program Details:
 
 
 
-E) EXP8: To simulate Binary Amplitude Shift Keying (ASK) using Python
+E) EXP10: To simulate Binary Amplitude Shift Keying (ASK) using Python
 
 Concept:
 Binary Amplitude Shift Keying (ASK) is a modulation technique that uses different amplitude levels to represent binary data, making it a simple and commonly used method in digital communication.
