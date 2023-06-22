@@ -43,6 +43,7 @@ Program Details:
 C) EXP4: To simulate Frequency Modulation (FM) using Python
 
 Concept:
+FM (Frequency Modulation) is a modulation technique where the frequency of a carrier signal is varied based on the amplitude of a modulating signal. Demodulation is the process of extracting the original modulating signal from the FM carrier signal.
 
 Program Details:
 
