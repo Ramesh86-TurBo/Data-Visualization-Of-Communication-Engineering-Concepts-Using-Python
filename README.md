@@ -59,3 +59,13 @@ Program Details:
 11. Execute the function `values` with specific parameter values to generate and analyze the FM signal.
 
 
+
+D) EXP8: To simulate Pulse Code Modulation (PCM) using Python
+
+Concept:
+
+Program Details:
+
+
+
+
