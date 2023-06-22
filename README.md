@@ -110,6 +110,28 @@ Concept:
 Binary Amplitude Shift Keying (ASK) is a modulation technique that uses different amplitude levels to represent binary data, making it a simple and commonly used method in digital communication.
 
 Program Details:
+1. Import the necessary Python modules: `matplotlib.pyplot`, `scipy.fft`, and `numpy`.
+2. Define the function `values` that takes the amplitude of the carrier signal (`vc`), frequency of the carrier signal (`fc`), and number of bits in the binary data (`Td`) as input.
+3. Set the sampling frequency (`fs`), time step interval (`dt`), time indices (`t`), number of samples (`n`), and frequency indices (`f`).
+4. Plot the carrier signal in the time domain.
+5. Generate the binary data sequence.
+6. Create the modulating signal using the binary data.
+7. Plot the modulating signal in the time domain.
+8. Obtain the ASK signal by multiplying the carrier signal with the modulating signal.
+9. Plot the ASK signal in the time domain.
+10. Compute and plot the spectrum of the ASK signal using the FFT.
+
+
+
+F) EXP11: To simulate Binary Frequency Shift Keying (FSK) using Python
+
+Concept:
+
+Program Details:
+
+
+
+
 
 
 
