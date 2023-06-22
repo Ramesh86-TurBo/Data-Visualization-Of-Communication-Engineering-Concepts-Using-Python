@@ -147,6 +147,16 @@ G) EXP12: To simulate Binary Phase Shift Keying (PSK) using Python
 Concept:
 
 Program Details:
+1. Import necessary Python modules: `matplotlib.pyplot`, `scipy.fft`, `numpy`, and `random`.
+2. Define a function named `values` that takes three parameters: `vc` (amplitude of the carrier signal), `fc` (frequency of the carrier signal), and `Td` (number of bits in the binary data).
+3. Set the sampling frequency (`fs`), sample time interval (`dt`), time indices (`t`), number of samples (`n`), frequency interval (`df`), and frequency indices (`f`) for the signals.
+4. Plot the carrier signal (`v_c`) as a function of time.
+5. Generate the modulating signal (`sqSignal`) using the input bit sequence (`bitData`) and bipolar NRZ encoding.
+6. Plot the modulating signal as a function of time.
+7. Perform phase shift keying (PSK) by multiplying the carrier signal (`v_c`) with the modulating signal (`sqSignal`) to obtain the PSK signal (`v_p`).
+8. Plot the PSK signal as a function of time.
+9. Calculate the spectrum of the PSK signal (`v_p_spec`) using fast Fourier transform (FFT) and plot the frequency spectrum.
+10. Call the `values` function with specified values for `vc`, `fc`, and `Td` to execute the program.
 
 
 
