@@ -1,4 +1,4 @@
-# Data-Visualization-of-Communication-Engineering-concepts-using-python
+# Data-Visualization-Of-Communication-Engineering-Concepts-Using-Python
 
 Libraries used: Matplotlib, Numpy, Scipy
 
