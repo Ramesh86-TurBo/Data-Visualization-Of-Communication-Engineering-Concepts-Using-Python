@@ -145,6 +145,7 @@ Program Details:
 G) EXP12: To simulate Binary Phase Shift Keying (PSK) using Python
 
 Concept:
+PSK (Phase Shift Keying) is a digital modulation technique that encodes data by varying the phase of a carrier wave. It is used for efficient communication and finds applications in various digital systems.
 
 Program Details:
 1. Import necessary Python modules: `matplotlib.pyplot`, `scipy.fft`, `numpy`, and `random`.
